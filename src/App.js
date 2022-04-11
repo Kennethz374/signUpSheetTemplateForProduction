@@ -1,21 +1,37 @@
 import "./App.css";
 import React, { useState } from "react";
+import Tab from "./components/Tab";
 
 const trainings = [
 	{
 		id: 1,
 		name: "Assembly Basics",
 		instructor: "James Hsu",
+		objective:
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus ipsa modi omnis ratione ad esse cumque officia voluptatibus et minus rem, laudantium enim quo nesciunt in perferendis libero rerum!",
+		requirement: "None",
+		duration: "1 hour",
+		capacity: 6,
 	},
 	{
 		id: 2,
 		name: "Soldering Basics",
 		instructor: "Kenneth Zhang",
+		objective:
+			"adsfjaldsjfa;kljdsf;lakjsdl;kfajs;lkdjfa;klsdjf;akljsd;lkfja;sdkfjadsf",
+		requirement: "None",
+		duration: "6 hours",
+		capacity: 2,
 	},
 	{
 		id: 3,
 		name: "Optical Cleaning",
 		instructor: "Nick Reddy",
+		objective:
+			"adsfjaldsjfa;kljdsf;lakjsdl;kfajs;lkdjfa;klsdjf;akljsd;lkfja;sdkfjadsf",
+		requirement: "None",
+		duration: "6 hours",
+		capacity: 2,
 	},
 ];
 
@@ -25,19 +41,8 @@ const App = () => {
 			<div className="text-4xl text-center text-blue-900 font-bold font-serif pb-10">
 				Production Training Sign Up Page
 			</div>
-			<ul className="flex-col ">
-				{trainings.map((training) => (
-					<li
-						key={training.id}
-						className="pb-2 flex-col mx-28 hover:px-2 hover:duration-300 delay-200 font-serif cursor-pointer"
-					>
-						<div className="ml-4">
-							<p className="text-3xl font-lg text-gray-900">{training.name}</p>
-						</div>
-						<div className="bg-zinc-400 w-full h-1 mb-3"></div>
-					</li>
-				))}
-			</ul>
+
+			<Tab trainings={trainings} />
 		</div>
 	);
 };
