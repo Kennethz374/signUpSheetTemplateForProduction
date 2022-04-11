@@ -29,7 +29,7 @@ const App = () => {
 				{trainings.map((training) => (
 					<li
 						key={training.id}
-						className="pb-2 flex-col mx-28 hover:px-2 hover:duration-300 delay-200  font-serif"
+						className="pb-2 flex-col mx-28 hover:px-2 hover:duration-300 delay-200 font-serif cursor-pointer"
 					>
 						<div className="ml-4">
 							<p className="text-3xl font-lg text-gray-900">{training.name}</p>
