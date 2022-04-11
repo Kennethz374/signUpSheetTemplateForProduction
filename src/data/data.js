@@ -45,12 +45,11 @@ const dates = [
 		trainees: ["Jim", "Neel", "Wong"],
 		training: "assembly",
 		id: 1,
-		avatar: "",
 	},
 	{
 		date: "April 30, 2022",
 		time: "10 am",
-		capacity: 3,
+		capacity: 6,
 		trainees: ["Jim", "Neel", "Wong"],
 		training: "assembly",
 		id: 2,
