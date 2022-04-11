@@ -43,7 +43,7 @@ const trainings = [
 
 const App = () => {
 	return (
-		<div className="m-10">
+		<div className="m-10 ">
 			<div className="text-4xl text-center text-blue-900 font-bold font-serif pb-10">
 				Production Training Sign Up Page
 			</div>

@@ -8,16 +8,13 @@ const Tab = ({ trainings }) => {
 	const handleClick = (id) => {
 		setIsClick(!isClick);
 		setId(id);
-		console.log(isClick);
+		console.log(isClick, id);
 	};
 	return (
 		<ul className="flex-col c ">
 			{trainings.map((training) => (
-				<li
-					key={training.id}
-					className="pb-2 flex-col mx-28 hover:px-2 hover:duration-300 delay-200 font-serif cursor-pointer"
-				>
-					<div className="ml-4">
+				<li key={training.id} className="pb-2 flex-col mx-28 ">
+					<div className="ml-4 hover:px-2 duration-300 delay-200 font-serif cursor-pointer">
 						<p
 							className="text-3xl font-lg text-gray-900"
 							onClick={() => handleClick(training.id)}
@@ -26,7 +23,9 @@ const Tab = ({ trainings }) => {
 						</p>
 					</div>
 					<div className="bg-zinc-400 w-full h-1 mb-3"></div>
-					{isClick && training.id == id && <ExpandTab training={training} />}
+					{isClick && training.id === id && (
+						<ExpandTab training={training} isClick={isClick} />
+					)}
 				</li>
 			))}
 		</ul>
