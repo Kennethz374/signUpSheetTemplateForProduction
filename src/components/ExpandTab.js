@@ -4,7 +4,7 @@ const ExpandTab = ({ training }) => {
 	const { instructor, requirement, capacity, duration, objective, avatar } =
 		training;
 	return (
-		<div className="bg-slate-300 rounded-md mx-40 text-lg p-5 break-words">
+		<div className="bg-slate-300 rounded-md mx-10 text-lg p-5 break-words">
 			{/* objective */}
 			<div>
 				<strong>Training Objective: </strong>
@@ -15,7 +15,7 @@ const ExpandTab = ({ training }) => {
 				<h3 className="mt-3 mr-4">
 					<strong>Trainer: </strong> {instructor}
 				</h3>
-				<img src={avatar} className="w-12 h-12 rounded-xl "></img>
+				<img src={avatar} className="w-12 rounded-full shadow-lg "></img>
 			</div>
 
 			<div className="mt-3">
@@ -31,9 +31,12 @@ const ExpandTab = ({ training }) => {
 			</div>
 
 			<div className="justify-center flex">
-				<div>
-					<button className="border-solid bg-slate-500 rounded-xl p-2 text-sm text-center">
-						See Schedules
+				<div class="flex space-x-2 justify-center">
+					<button
+						type="button"
+						class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+					>
+						Button
 					</button>
 				</div>
 			</div>
