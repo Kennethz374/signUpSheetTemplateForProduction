@@ -4,7 +4,7 @@ const ExpandTab = ({ training }) => {
 	const { instructor, requirement, capacity, duration, objective, avatar } =
 		training;
 	return (
-		<div className="bg-slate-300 rounded-md mx-40 text-lg p-5">
+		<div className="bg-slate-300 rounded-md mx-40 text-lg p-5 break-words">
 			{/* objective */}
 			<div>
 				<strong>Training Objective: </strong>
